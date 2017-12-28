@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://WebService/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="NewWebService" targetNamespace="http://WebService/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WarlokSoft/NewWebService?xsd=1" namespace="http://WebService/" />
+    </xsd:schema>
+  </types>
+  <message name="getUsuarioTipo">
+    <part name="parameters" element="tns:getUsuarioTipo" />
+  </message>
+  <message name="getUsuarioTipoResponse">
+    <part name="parameters" element="tns:getUsuarioTipoResponse" />
+  </message>
+  <message name="getIdNickname">
+    <part name="parameters" element="tns:getIdNickname" />
+  </message>
+  <message name="getIdNicknameResponse">
+    <part name="parameters" element="tns:getIdNicknameResponse" />
+  </message>
+  <message name="getContactos">
+    <part name="parameters" element="tns:getContactos" />
+  </message>
+  <message name="getContactosResponse">
+    <part name="parameters" element="tns:getContactosResponse" />
+  </message>
+  <message name="getEstadoPerfil">
+    <part name="parameters" element="tns:getEstadoPerfil" />
+  </message>
+  <message name="getEstadoPerfilResponse">
+    <part name="parameters" element="tns:getEstadoPerfilResponse" />
+  </message>
+  <message name="getConversacion">
+    <part name="parameters" element="tns:getConversacion" />
+  </message>
+  <message name="getConversacionResponse">
+    <part name="parameters" element="tns:getConversacionResponse" />
+  </message>
+  <message name="getPass">
+    <part name="parameters" element="tns:getPass" />
+  </message>
+  <message name="getPassResponse">
+    <part name="parameters" element="tns:getPassResponse" />
+  </message>
+  <message name="Insertar">
+    <part name="parameters" element="tns:Insertar" />
+  </message>
+  <message name="InsertarResponse">
+    <part name="parameters" element="tns:InsertarResponse" />
+  </message>
+  <message name="getProyecto">
+    <part name="parameters" element="tns:getProyecto" />
+  </message>
+  <message name="getProyectoResponse">
+    <part name="parameters" element="tns:getProyectoResponse" />
+  </message>
+  <portType name="webService">
+    <operation name="getUsuarioTipo">
+      <input wsam:Action="http://WebService/webService/getUsuarioTipoRequest" message="tns:getUsuarioTipo" />
+      <output wsam:Action="http://WebService/webService/getUsuarioTipoResponse" message="tns:getUsuarioTipoResponse" />
+    </operation>
+    <operation name="getIdNickname">
+      <input wsam:Action="http://WebService/webService/getIdNicknameRequest" message="tns:getIdNickname" />
+      <output wsam:Action="http://WebService/webService/getIdNicknameResponse" message="tns:getIdNicknameResponse" />
+    </operation>
+    <operation name="getContactos">
+      <input wsam:Action="http://WebService/webService/getContactosRequest" message="tns:getContactos" />
+      <output wsam:Action="http://WebService/webService/getContactosResponse" message="tns:getContactosResponse" />
+    </operation>
+    <operation name="getEstadoPerfil">
+      <input wsam:Action="http://WebService/webService/getEstadoPerfilRequest" message="tns:getEstadoPerfil" />
+      <output wsam:Action="http://WebService/webService/getEstadoPerfilResponse" message="tns:getEstadoPerfilResponse" />
+    </operation>
+    <operation name="getConversacion">
+      <input wsam:Action="http://WebService/webService/getConversacionRequest" message="tns:getConversacion" />
+      <output wsam:Action="http://WebService/webService/getConversacionResponse" message="tns:getConversacionResponse" />
+    </operation>
+    <operation name="getPass">
+      <input wsam:Action="http://WebService/webService/getPassRequest" message="tns:getPass" />
+      <output wsam:Action="http://WebService/webService/getPassResponse" message="tns:getPassResponse" />
+    </operation>
+    <operation name="Insertar">
+      <input wsam:Action="http://WebService/webService/InsertarRequest" message="tns:Insertar" />
+      <output wsam:Action="http://WebService/webService/InsertarResponse" message="tns:InsertarResponse" />
+    </operation>
+    <operation name="getProyecto">
+      <input wsam:Action="http://WebService/webService/getProyectoRequest" message="tns:getProyecto" />
+      <output wsam:Action="http://WebService/webService/getProyectoResponse" message="tns:getProyectoResponse" />
+    </operation>
+  </portType>
+  <binding name="webServicePortBinding" type="tns:webService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getUsuarioTipo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getIdNickname">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getContactos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getEstadoPerfil">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getConversacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPass">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Insertar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getProyecto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="NewWebService">
+    <port name="webServicePort" binding="tns:webServicePortBinding">
+      <soap:address location="http://localhost:8080/WarlokSoft/NewWebService" />
+    </port>
+  </service>
+</definitions>

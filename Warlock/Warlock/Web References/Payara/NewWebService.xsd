@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://WebService/" targetNamespace="http://WebService/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Insertar" type="tns:Insertar" />
+  <xs:element name="InsertarResponse" type="tns:InsertarResponse" />
+  <xs:element name="getContactos" type="tns:getContactos" />
+  <xs:element name="getContactosResponse" type="tns:getContactosResponse" />
+  <xs:element name="getConversacion" type="tns:getConversacion" />
+  <xs:element name="getConversacionResponse" type="tns:getConversacionResponse" />
+  <xs:element name="getEstadoPerfil" type="tns:getEstadoPerfil" />
+  <xs:element name="getEstadoPerfilResponse" type="tns:getEstadoPerfilResponse" />
+  <xs:element name="getIdNickname" type="tns:getIdNickname" />
+  <xs:element name="getIdNicknameResponse" type="tns:getIdNicknameResponse" />
+  <xs:element name="getPass" type="tns:getPass" />
+  <xs:element name="getPassResponse" type="tns:getPassResponse" />
+  <xs:element name="getProyecto" type="tns:getProyecto" />
+  <xs:element name="getProyectoResponse" type="tns:getProyectoResponse" />
+  <xs:element name="getUsuarioTipo" type="tns:getUsuarioTipo" />
+  <xs:element name="getUsuarioTipoResponse" type="tns:getUsuarioTipoResponse" />
+  <xs:complexType name="getUsuarioTipo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="pass" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getUsuarioTipoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPassResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getIdNickname">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nickname" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getIdNicknameResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEstadoPerfil">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEstadoPerfilResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getContactos">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getContactosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getConversacion">
+    <xs:sequence>
+      <xs:element name="idEmisor" type="xs:int" />
+      <xs:element name="idReceptor" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getConversacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getProyecto">
+    <xs:sequence>
+      <xs:element name="idUsuario" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getProyectoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Insertar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="consulta" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="InsertarResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

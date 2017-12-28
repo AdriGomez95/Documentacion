@@ -39,6 +39,7 @@ USE WarlockSoft
     idEstado INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     descripcion VARCHAR(280) NOT NULL,
     idUsuario INT NOT NULL,
+    Reporte TINYINT(1),
     CONSTRAINT FK_Estado_idUsuario FOREIGN KEY (idUsuario) REFERENCES usuario(idUsuario)
   );
 
@@ -47,6 +48,7 @@ USE WarlockSoft
     fecha DATE NOT NULL,
     descripcion VARCHAR(280) NOT NULL,
     idEstado INT NOT NULL,
+    Reporte TINYINT(1),
     CONSTRAINT FK_Comentario_idEstado FOREIGN KEY (idEstado) REFERENCES estado(idEstado)
   );
 
@@ -63,6 +65,7 @@ USE WarlockSoft
     descripcion VARCHAR(280) NOT NULL,
     fecha DATE NOT NULL,
     idContacto INT NOT NULL,
+    Reporte TINYINT(1),
     CONSTRAINT FK_Mensaje_idContacto FOREIGN KEY (idContacto) REFERENCES contacto(idContacto)
   );
 

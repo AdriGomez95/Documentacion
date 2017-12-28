@@ -1,0 +1,9 @@
+C:\Users\giann\source\repos\Warlock\Warlock\bin\Warlock.dll.config
+C:\Users\giann\source\repos\Warlock\Warlock\bin\Warlock.dll
+C:\Users\giann\source\repos\Warlock\Warlock\bin\Warlock.pdb
+C:\Users\giann\source\repos\Warlock\Warlock\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\giann\source\repos\Warlock\Warlock\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\giann\source\repos\Warlock\Warlock\obj\Debug\Warlock.csprojResolveAssemblyReference.cache
+C:\Users\giann\source\repos\Warlock\Warlock\obj\Debug\Warlock.csproj.CoreCompileInputs.cache
+C:\Users\giann\source\repos\Warlock\Warlock\obj\Debug\Warlock.dll
+C:\Users\giann\source\repos\Warlock\Warlock\obj\Debug\Warlock.pdb
